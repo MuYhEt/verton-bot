@@ -27,7 +27,7 @@ bot.on("message", function(message) {
         case "help":
             var embed = new Discord.RichEmbed()
             .addField("USERNAME", message.author.tag)
-            .setDescription(message.author.username + "'s profile")
+            .setDescription("Khronos's COMMANDS")
            .setFooter("discord.gg/qrgAPGU")
             .setThumbnail(message.author.avatarURL)
             .setColor('RANDOM')
