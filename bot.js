@@ -29,6 +29,7 @@ bot.on("message", function(message) {
             .addField("About us", "A project made for studies, done by a single person. The bot can still be considered in pre-pre-pre-alpha.")
             .addField("Commands", "Ping, 8ball",true)
             .addField("Prefix", PREFIX, true)
+            .addField("Made by", "<@220690100332265472>")
             .setDescription("Developers Lab - Community")
            .setFooter("Our discord - discord.gg/qrgAPGU")
             .setThumbnail(message.author.avatarURL)
