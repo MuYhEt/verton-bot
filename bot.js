@@ -50,8 +50,9 @@ bot.on("message", function(message) {
 
         break;
 
-        case "profile":
+        case "user":
         var embed = new Discord.RichEmbed()
+        .addField("ID", message.author.id)
          .addField("USERNAME", message.author.tag)
          .setDescription(message.author.username + "'s profile")
         .setFooter("discord.gg/qrgAPGU")
