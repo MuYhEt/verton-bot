@@ -26,7 +26,7 @@ bot.on("message", function(message) {
     switch (args[0].toLowerCase()) {
         case "help":
             var embed = new Discord.RichEmbed()
-            .addField("About us", "A project made for studies, done by a single person. The bot can still be considered in pre-pre--pre-alpha.")
+            .addField("About us", "A project made for studies, done by a single person. The bot can still be considered in pre-pre-pre-alpha.")
             .addField("Commands", "Ping, 8ball",true)
             .addField("Prefix", PREFIX, true)
             .setDescription("Developers Lab - Community")
