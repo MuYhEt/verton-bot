@@ -55,10 +55,9 @@ bot.on("message", function(message) {
         .addField("ID", message.author.id)
         .addField("USERNAME", message.author.tag)
         .setTitle(message.author.tag)
-        .setImage(message.author.avatarURL)
         //.setDescription(message.author.username + "'s profile")
         .setFooter("discord.gg/qrgAPGU")
-        .setThumbnail(message.author.avatarURL)
+        .setThumbnail(message.author.avatarURL,true)
         .setColor('RANDOM')
         message.channel.send(embed);
         break;
