@@ -30,11 +30,7 @@ bot.on("message", function(message) {
         break;
 
         case "ping":
-        message.channel.sendMessage("pong!");
-        break;
-
-        case "info":
-        message.channel.sendMessage("EU SOU UM BOT FODA PRA CARALHO QUE FAZ COISA PRA CARALHO MERMAUM!");
+        message.channel.sendMessage('Pong! /`${Date.now() - message.createdTimestamp} ms\`');
         break;
 
         case "8ball":
