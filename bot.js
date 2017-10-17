@@ -44,7 +44,6 @@ bot.on("message", function(message) {
         case "profile":
         var embed = new Discord.RichEmbed()
          .addField("USERNAME", message.author.tag)
-         .addField("MEMBER AT", message.guild.name)
          .setDescription(message.author.username + "'s profile")
         .setFooter("discord.gg/qrgAPGU")
          .setThumbnail(message.author.avatarURL)
