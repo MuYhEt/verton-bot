@@ -28,7 +28,7 @@ bot.on("message", function(message) {
             var embed = new Discord.RichEmbed()
             .addField("About us", "Some text")
             .addField("Commands", "Ping, 8ball")
-            .addField("Prefix", PREFIX, true)
+            .addField("Prefix", PREFIX, false)
             .setDescription("Developers Lab - Community")
            .setFooter("Our discord - discord.gg/qrgAPGU")
             .setThumbnail(message.author.avatarURL)
