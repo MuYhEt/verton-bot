@@ -14,7 +14,7 @@ var f8ball = [
 // Functions
 bot.on("ready", function() {
 console.log("Ready");
-bot.user.setGame("Online | "+PREFIX+"help")
+bot.user.setGame("24/7 | "+PREFIX+"help")
 });
 
 bot.on("message", function(message) {
