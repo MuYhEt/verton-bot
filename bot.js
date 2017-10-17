@@ -30,7 +30,7 @@ bot.on("message", function(message) {
         break;
 
         case "ping":
-        message.channel.sendMessage(`Pong! \`${Date.now() - message.createdTimestamp} ms\``);
+        message.channel.sendMessage(`**PONG!** \`${Date.now() - message.createdTimestamp} ms\``);
         break;
 
         case "8ball":
