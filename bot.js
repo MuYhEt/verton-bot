@@ -26,9 +26,11 @@ bot.on("message", function(message) {
     switch (args[0].toLowerCase()) {
         case "help":
             var embed = new Discord.RichEmbed()
-            .addField("USERNAME", message.author.tag)
-            .setDescription("Khronos's COMMANDS")
-           .setFooter("discord.gg/qrgAPGU")
+            .addField("About us", "Some text")
+            .addField("Commands", "Ping, 8ball")
+            .addField("Prefix", PREFIX, true)
+            .setDescription("Developers Lab - Community")
+           .setFooter("Our discord - discord.gg/qrgAPGU")
             .setThumbnail(message.author.avatarURL)
             .setColor('RANDOM')
            message.author.sendMessage(embed);
