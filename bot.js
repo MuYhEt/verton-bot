@@ -52,9 +52,10 @@ bot.on("message", function(message) {
 
         case "user":
         var embed = new Discord.RichEmbed()
+        var cAt   = new Date(year,month[,date[]])
         .addField("ID", message.author.id,true)
         .addField("USERNAME", message.author.tag,true)
-        .addField("Account Created",message.author.createdAt.Date(year,month[,date[]]),true)
+        .addField("Account Created",message.author.createdAt.cAt,true)
         .setTitle(message.author.tag,true)
         .setDescription("User Details")
         .setFooter("discord.gg/qrgAPGU")
