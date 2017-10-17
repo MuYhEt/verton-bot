@@ -25,6 +25,7 @@ bot.on("message", function(message) {
 
     switch (args[0].toLowerCase()) {
         case "help":
+            message.author.sendMessage('HI');
         message.delete();
         break;
 
