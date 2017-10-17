@@ -53,11 +53,12 @@ bot.on("message", function(message) {
         case "user":
         var embed = new Discord.RichEmbed()
         .addField("ID", message.author.id)
-         .addField("USERNAME", message.author.tag)
-         .setDescription(message.author.username + "'s profile")
+        .addField("USERNAME", message.author.tag)
+        .addTitle(message.author.tag)
+        .setDescription(message.author.username + "'s profile")
         .setFooter("discord.gg/qrgAPGU")
-         .setThumbnail(message.author.avatarURL)
-         .setColor('RANDOM')
+        .setThumbnail(message.author.avatarURL)
+        .setColor('RANDOM')
         message.channel.send(embed);
         break;
 
