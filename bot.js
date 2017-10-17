@@ -41,16 +41,6 @@ bot.on("message", function(message) {
 
         break;
 
-        //Sad
-        case "naruto":
-        message.channel.sendMessage("**SUPER SADNESS TIME**: https://youtu.be/CS-2yV8QbtY");
-        break;
-
-        case "avatar":
-        message.channel.sendMessage("**"+message.author.username + "'s avatar URL:** " + message.author.avatarURL);
-        break;
-
-
         case "profile":
         var embed = new Discord.RichEmbed()
          .addField("USERNAME", message.author.tag)
