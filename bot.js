@@ -2,8 +2,6 @@
 const Discord = require('discord.js');
 var bot = new Discord.Client();
 
-const TOKEN = "MzY5ODc4NDcwNzEwMzk0ODgw.DMe7rw.2EbnVXyC50wuQq-cdFcBvwDH_HY";
-
 const PREFIX = "v!";
 
 //Functions 8ball
@@ -71,4 +69,4 @@ bot.on("message", function(message) {
     }
 });
 
-bot.login(TOKEN);
+bot.login(process.env.TOKEN);
