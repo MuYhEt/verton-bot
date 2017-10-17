@@ -55,7 +55,7 @@ bot.on("message", function(message) {
         .addField("ID", message.author.id)
         .addField("USERNAME", message.author.tag)
         .addTitle(message.author.tag)
-        .setDescription(message.author.username + "'s profile")
+        //.setDescription(message.author.username + "'s profile")
         .setFooter("discord.gg/qrgAPGU")
         .setThumbnail(message.author.avatarURL)
         .setColor('RANDOM')
