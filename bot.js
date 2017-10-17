@@ -54,11 +54,11 @@ bot.on("message", function(message) {
         var embed = new Discord.RichEmbed()
         .addField("ID", message.author.id)
         .addField("USERNAME", message.author.tag)
+        .addField("Account Created At",message.author.createdAt)
         .setTitle(message.author.tag)
         .setDescription(message.author.username + "'s profile")
         .setFooter("discord.gg/qrgAPGU")
         .setThumbnail(message.author.avatarURL)
-        .setField("Account Created At",message.author.createdAt)
         .setColor('RANDOM')
         message.channel.send(embed);
         break;
