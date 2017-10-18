@@ -53,7 +53,6 @@ bot.on("message", function(message) {
         case "user":
         var embed = new Discord.RichEmbed()
         .addField("ID", message.author.id,true)
-        .addField("Nickname", `${"<@message.author.id>"}`,true)
         .addField("Account Created",message.author.createdAt,true)
         .setTitle(message.author.tag,true)
         .setDescription("User Details")
